@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Aloha Apparel</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://use.fontawesome.com/55094f33f4.js"></script>
+  </head>
+  <body class = "container" >
+    <!-- Navigation & full top bar w logo and cart-->
+    <nav>
+     <img src = "images/aloha-logo.svg" alt = "Aloha logo">
+     <ul>
+       <li>ABOUT</li>
+       <li>SHOP</li>
+       <li>FEATURED</li>
+       <li>UPDATES</li>
+     </ul>
+     <img src = "images/cart-icon.svg" alt = "Shopping cart">
+    </nav>
+
+    <!-- Photo header-->
+    <header>
+      <div class = "center">
+        <h3>NEW COLLECTION</h3>
+        <h1>Spring/Summer 2016</h1>
+      </div>
+    </header>
+
+    <section>
+      <div class = "center">
+        <h2><span>Hand-crafted</span> Styles</h2>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
+        our current selection of products or sign-up for updates below.</p>
+      </div>
+    </section>
+
+    <div class = "display-grid">
+      <div class = "mens">
+        <h3>MEN'S</h3>
+      </div>
+      <div class = "trends">
+        <h3>TRENDS</h3>
+      </div>
+      <div class = "glasses">
+        <h3>GLASSES</h3>
+      </div>
+      <div class = "sale">
+        <h3>SALE</h3>
+      </div>
+      <div class = "bags">
+        <h3>BAGS</h3>
+      </div>
+      <div class = "womens">
+        <h3>WOMEN'S</h3>
+      </div>
+    </div>
+
+    <!-- Most loved products FLICKITY jquery will be added -->
+    <div class ="products">
+      <h2><span>Most-loved</span> Products</h2>
+      <!-- INSERT FLICKITY JQUERY APP HERE-->
+      <div class = "inline">
+        <img src = "images/checked-stretch-dress.jpg" alt = "Checked Stretch Dress">
+        <p>DRESSES</p>
+        <h4>Checked Stretch Dress</h4>
+        <p>$129.00</p>
+      </div>
+      <div class = "inline">
+        <img src = "images/blue-hipster-backpack.jpg" alt = "Blue Hipster Backpack">
+        <p>BAGS</p>
+        <h4>Blue Hipster Backpack</h4>
+        <p>$69.00</p>
+      </div>
+        <div class = "inline">
+        <img src = "images/demin-overall-shorts.jpg" alt = "Denim Overall Shorts">
+        <p>DENIM</p>
+        <h4>Denim Overall Shorts</h4>
+        <p>$89.00</p>
+      </div>
+      <div class = "inline">
+        <img src = "images/pink-dotted-dress.jpg" alt = "Pink Dotted Dress">
+        <p>DRESSES</p>
+        <h4>Pink Dotted Dress</h4>
+        <p>$99.00</p>
+      </div>
+    </div>
+
+    <!--Sign up for updates, still need to edit submit button and add linear black gradient to overlap the bg image -->
+    <div class = "signup">
+      <div class = "center">
+        <h2 class = "white"><span>Sign-up for</span> Updates</h2>
+        <p>Stay updated on our latest product releases, be first to find out about upcoming
+        sales, and get free style tips from our blog. Unsubscribe at any time.
+        </p>
+        <form action = "file.php" method = "get">
+          <input type = "text" name = "email" placeholder = "Your Email">
+          <input type = "submit" value = "Subscribe">
+        </form>
+      </div>
+    </div>
+
+    <footer>
+
+      <div class = "flex-footer">
+        <p>&copy; 2016 Aloha Apparel Co.</p><br><p>Powered by HTML and CSS.</p><br>
+        <p>604-604-6040. <a href = "mailto:info@alohaapparel.com">info@alohaapparel.com</a></p><br>
+        <p class = "grey">1490 W Broadway<br>Vancouver, BC, Canada</p>
+      </div>
+
+      <div class = "flex-footer">
+        <ul>
+          <li><i class = "fa fa-facebook"></i> Facebook</li>
+          <li><i class = "fa fa-twitter"></i> Twitter</li>
+          <li><i class = "fa fa-instagram"></i> Instagram</li>
+          <li><i class = "fa fa-pinterest"></i> Pinterest</li>
+          <li><i class = "fa fa-google-plus"></i> Google+</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
