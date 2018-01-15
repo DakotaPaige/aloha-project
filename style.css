@@ -165,12 +165,12 @@ header {
   background-size: contain;
   background-position: 0px 0px,center 50px, 0px 0px;
   width: 100%;
-  height: 400px;
+  height: 50vh;
   margin: 0px;
 }
 
 nav {
-  height: 40px;
+  height: 5em;
   background-color: white;
   margin: 0px;
   padding-top: 20px;
@@ -178,13 +178,17 @@ nav {
   color: #e2574c;
   font-family: 'Raleway', Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
+  order: 1;
+  flex-grow: 1;
+  flex: 2 100%;
 }
 nav li {
   display: inline-block;
@@ -199,7 +203,7 @@ nav img {
 
 section {
   background-color: white;
-  height: 200px;
+  height: 30vh;
   /*line-height: 200px;*/
 }
 
@@ -242,7 +246,7 @@ h2 {
   letter-spacing: 0.05em;
   padding-bottom: 10px;
   line-height: 100%;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .white {
@@ -274,7 +278,7 @@ p {
 
 section p {
   padding-top: 10px;
-  width: 550px;
+  width: 80%;
   line-height: 200%;
 }
 
@@ -282,7 +286,7 @@ section p {
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 580px;
+  width: 90%;
   line-height: 200%;
   text-shadow: black 1px 0 10px; 
 }
@@ -320,6 +324,7 @@ footer p {
   font-family: 'Playfair Display', 'Times New Roman', serif;
   font-weight: normal;
   font-style: normal;
+  line-height: 1.5em;
 }
 
 .flex-footer ul {
@@ -330,49 +335,80 @@ form {
   line-height: 100%;
 }
 
+/* i {
+  margin-right: 0.5rem;
+} */
+
 /* MAIN FLEXBOX DISPLAY */
 .mens {
   background-image: url("images/mens-category.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50vw;
-  height: 25vh;
+  height: 30vh;
 }
 
 .trends {
   background-image: url("images/trends-category.jpg");
   background-size: cover;
-  background-position: center right;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25vw;
-  height: 25vh;
+  height: 30vh;
+  margin-left: 0.3em;
 }
 
 .glasses {
   background-image: url("images/glasses-category.jpg");
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25vw;
-  height: 25vh;
+  height: 30vh;
+  margin-left: 0.3em;
 }
 
 .sale {
   background-image: url("images/sale-category.jpg");
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25vw;
-  height: 25vh;
+  height: 30vh;
+  margin-right: 0.3em;
 }
 
 .bags {
   background-image: url("images/bags-category.jpg");
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25vw;
-  height: 25vh;
+  height: 30vh;
+  margin-right: 0.3em;
 }
 
 .womens {
   background-image: url("images/womens-category.jpg");
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50vw;
-  height: 25vh;
+  height: 30vh;
 }
 
 /* DIVS */
@@ -382,13 +418,26 @@ form {
 
 .display-grid {
   height: 100%;
-  background-color: grey;
+  background-color: white;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* align-content: stretch; */
+  justify-content: flex-start;
 }
 
+.toprow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 0.3em;
+}
+ 
+.bottomrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 /* MAINTAIN ASPECT RATIO
 .box {
   width: 25vw;
@@ -396,6 +445,7 @@ form {
 
 .products {
   background-color: white;
+  padding: 20px;
 }
 
 .inline {
@@ -405,12 +455,12 @@ form {
 }
 
 .signup {
-  background-image: url("images/wave-bkgd.jpg");
+  background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/wave-bkgd.jpg");
   height: 300px;
   line-height: 300px;
   width: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-repeat: no-repeat no-repeat;
 }
 
 .center {
@@ -421,3 +471,42 @@ form {
   flex-direction: column;
 }
 
+/* OPTIMIZING FOR MOBILE & TABLET */
+@media all and (min-width: 600px) {
+  nav {
+    height: 40px;
+    background-color: white;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #e2574c;
+    font-family: 'Raleway', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    order: 0;
+    flex: 0 1 auto;
+  }
+
+  nav img {
+    height: 100%;
+    width: 25%;
+  }
+
+}
+
+@media all and (min-width: 1240px) {
+  section p {
+    width: 45%;
+  }
+
+  .signup p {
+    width: 50%;
+  }
+}
