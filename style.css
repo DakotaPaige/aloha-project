@@ -162,7 +162,7 @@ header {
   background: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)),url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
   background-position: center, center bottom, center;
   background-repeat: no-repeat,no-repeat, repeat-x;
-  background-size: contain;
+  background-size: auto 100%;
   background-position: 0px 0px,center 50px, 0px 0px;
   width: 100%;
   height: 50vh;
@@ -210,11 +210,13 @@ section {
 footer {
   background-color: #242424;
   color: white;
-  text-align: left;
+  text-align: center;
   padding: 60px;
   border-top: 8px solid white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
  /* HEADINGS */
 h3 {
@@ -331,8 +333,16 @@ footer p {
   line-height: 30px;
 }
 
+.flex-footer li {
+  display: inline-block;
+  padding:0.5em;
+  padding-top: 2em;
+}
+
 form {
   line-height: 100%;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 14px;
 }
 
 /* i {
@@ -348,8 +358,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 100vw;
   height: 30vh;
+  margin-bottom: 0.5em;
 }
 
 .trends {
@@ -359,9 +370,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25vw;
+  width: 49%;
   height: 30vh;
-  margin-left: 0.3em;
 }
 
 .glasses {
@@ -371,9 +381,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25vw;
+  width: 49%;
   height: 30vh;
-  margin-left: 0.3em;
+  margin-left: 2%;
 }
 
 .sale {
@@ -383,9 +393,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25vw;
+  width: 49%;
   height: 30vh;
-  margin-right: 0.3em;
 }
 
 .bags {
@@ -395,9 +404,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25vw;
+  width: 49%;
   height: 30vh;
-  margin-right: 0.3em;
+  margin-left: 2%;
 }
 
 .womens {
@@ -407,8 +416,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 100%;
   height: 30vh;
+  margin-top: 0.5em;
 }
 
 /* DIVS */
@@ -429,14 +439,14 @@ form {
 .toprow {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  padding-bottom: 0.3em;
+  flex-wrap: wrap;
+  padding-bottom: 0.5em;
 }
  
 .bottomrow {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 /* MAINTAIN ASPECT RATIO
 .box {
@@ -471,34 +481,95 @@ form {
   flex-direction: column;
 }
 
+.hidden {
+  display: none;
+}
+
+.subscribe {
+  color: white;
+  background-color: #e2574c;
+  border-radius: 2em;
+  padding: 0.75em 1.5em;
+  font-size: 14px;
+}
+
+.input {
+  padding: 0.75em 2em;
+  border-radius: 2em;
+}
+
 /* OPTIMIZING FOR MOBILE & TABLET */
 @media all and (min-width: 600px) {
   nav {
-    height: 40px;
-    background-color: white;
-    margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #e2574c;
-    font-family: 'Raleway', Arial, sans-serif;
+    height: 3em;
     display: flex;
     justify-content: space-between;
   }
 
   nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
     order: 0;
     flex: 0 1 auto;
   }
 
-  nav img {
-    height: 100%;
-    width: 25%;
+  footer {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
+  .hidden {
+    display: inline-block;
+  }
+
+  .flex-footer li {
+    display: block;
+    padding: 0.2em;
+  }
+
+  .toprow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 0.3em;
+  }
+   
+  .bottomrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .mens {
+    width: 50vw;
+    margin-bottom: 0;
+  }
+
+  .trends {
+    width: 25vw;
+    margin-left: 0.3em;
+  }
+
+  .glasses {
+    width: 25vw;
+    margin-left: 0.3em;
+  }
+
+  .sale {
+    width: 25vw;
+    margin-right: 0.3em;
+  }
+
+  .bags {
+    width: 25vw;
+    margin-right: 0.3em;
+    margin-left: 0;
+  }
+
+  .womens {
+    width: 50vw;
+    margin-top: 0;
+  }
 }
 
 @media all and (min-width: 1240px) {
