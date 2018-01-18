@@ -6,6 +6,7 @@
       <title>Aloha Apparel</title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <script src="https://use.fontawesome.com/55094f33f4.js"></script>
+      <link rel="stylesheet" href="flickity.css" media="screen">
   </head>
   <body class = "container" >
     <!-- Navigation & full top bar w logo and cart-->
@@ -67,31 +68,58 @@
     <div class ="products">
       <h2><span>Most-loved</span> Products</h2>
       <!-- INSERT FLICKITY JQUERY APP HERE-->
-      <div class = "inline">
-        <img src = "images/checked-stretch-dress.jpg" alt = "Checked Stretch Dress">
-        <p>DRESSES</p>
-        <h4>Checked Stretch Dress</h4>
-        <p>$129.00</p>
-      </div>
-      <div class = "inline">
-        <img src = "images/blue-hipster-backpack.jpg" alt = "Blue Hipster Backpack">
-        <p>BAGS</p>
-        <h4>Blue Hipster Backpack</h4>
-        <p>$69.00</p>
-      </div>
+      <div class="main-carousel">
         <div class = "inline">
-        <img src = "images/demin-overall-shorts.jpg" alt = "Denim Overall Shorts">
-        <p>DENIM</p>
-        <h4>Denim Overall Shorts</h4>
-        <p>$89.00</p>
-      </div>
-      <div class = "inline">
-        <img src = "images/pink-dotted-dress.jpg" alt = "Pink Dotted Dress">
-        <p>DRESSES</p>
-        <h4>Pink Dotted Dress</h4>
-        <p>$99.00</p>
-      </div>
-    </div>
+          <div class="carousel-cell">
+            <img src = "images/checked-stretch-dress.jpg" alt = "Checked Stretch Dress">
+            <p>DRESSES</p>
+            <h4>Checked Stretch Dress</h4>
+            <p>$129.00</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class = "inline">
+            <img src = "images/blue-hipster-backpack.jpg" alt = "Blue Hipster Backpack">
+            <p>BAGS</p>
+            <h4>Blue Hipster Backpack</h4>
+            <p>$69.00</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class = "inline">
+            <img src = "images/demin-overall-shorts.jpg" alt = "Denim Overall Shorts">
+            <p>DENIM</p>
+            <h4>Denim Overall Shorts</h4>
+            <p>$89.00</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class = "inline">
+            <img src = "images/pink-dotted-dress.jpg" alt = "Pink Dotted Dress">
+            <p>DRESSES</p>
+            <h4>Pink Dotted Dress</h4>
+            <p>$99.00</p>
+          </div><!-- END OF INLINE -->
+        </div><!-- END OF CAROUSEL-CELL -->
+        <div class = "carousel-cell">
+          <div class = "inline">
+            <img src = "images/blue-silk-dress.jpg" alt = "Blue Silk Dress">
+            <p>DRESSES</p>
+            <h4>Blue Silk Dress</h4>
+            <p>$119.00</p>
+          </div>
+        </div>
+        <div class = "carousel-cell">
+          <div class = "inline">
+            <img src = "images/cotton-yellow-tshirt.jpg" alt = "Cotton Yellow Tshirt">
+            <p>SHIRTS</p>
+            <h4>Cotton Yellow Tshirt</h4>
+            <p>$39.00</p>
+          </div>
+        </div>
+        </div>
+      </div><!-- END OF MAIN-CAROUSEL -->
+    </div><!-- END OF PRODUCTS -->
 
     <!--Sign up for updates, still need to edit submit button and add linear black gradient to overlap the bg image -->
     <div class = "signup">
@@ -125,5 +153,8 @@
         </ul>
       </div>
     </footer>
+    <script src = "jquery-3.2.1.min.js"></script>
+    <script src = "flickity.pkgd.min.js"></script>
+    <script src = "script.js"></script>
   </body>
 </html>
