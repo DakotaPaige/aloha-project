@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+  border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -180,7 +180,27 @@ table {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    /* position: fixed; */
+    width: 100%;
   }
+
+  nav a:active {
+    color: #e2574c;
+    text-decoration: none;
+  }
+  nav a:visited {
+    color: #e2574c;
+    text-decoration: none;
+  }
+  nav a:link {
+    color: #e2574c;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #b64036;
+    text-decoration: none;
+  }
+
   nav ul {
     display: flex;
     align-items: center;
@@ -201,6 +221,7 @@ table {
   nav img {
     height: 100%;
     width: 25%;
+    padding-right: 2em;
   }
 
   .cart-icon {
@@ -309,16 +330,16 @@ section p {
   color: #969696;
 }
 
-a:active {
+.flex-footer a:active {
   color: white;
 }
-a:hover {
+.flex-footer a:hover {
   color: white;
 }
-a:visited {
+.flex-footer a:visited {
   color: white;
 }
-a:link {
+.flex-footer a:link {
   color: white;
 }
 
@@ -534,6 +555,10 @@ form {
     padding: 0px;
   }
 
+  nav img {
+    padding-right: 0;
+  }
+
   .cart-icon
   {
     width: 25%;
@@ -648,7 +673,6 @@ form {
   }
    
   nav {
-    position: fixed;
-    width: 100%;
+    width: 1240px;
   }
 }

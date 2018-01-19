@@ -13,10 +13,10 @@
     <nav>
      <img src = "images/aloha-logo.svg" alt = "Aloha logo">
      <ul>
-       <li>ABOUT</li>
-       <li>SHOP</li>
-       <li>FEATURED</li>
-       <li>UPDATES</li>
+       <li><a href = "#about">ABOUT</a></li>
+       <li><a href = "#shop">SHOP</a></li>
+       <li><a href = "#feature">FEATURED</a></li>
+       <li><a href = "#updates">UPDATES</a></li>
      </ul>
      <img src = "images/cart-icon.svg" alt = "Shopping cart" class = "cart-icon">
     </nav>
@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <section>
+    <section id = "about">
       <div class = "center">
         <h2><span>Hand-crafted</span> Styles</h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
@@ -39,7 +39,7 @@
     </section>
 
     <!-- nest more flexboxes to have the two rows be separate flexboxes, then amongst the rows do more flexboxes -->
-    <div class = "display-grid">
+    <div class = "display-grid" id = "shop">
       <div class = "toprow">
         <div class = "mens">
           <h3>MEN'S</h3>
@@ -65,7 +65,7 @@
     </div>
 
     <!-- Most loved products FLICKITY jquery will be added -->
-    <div class ="products">
+    <div class ="products" id = "feature">
       <h2><span>Most-loved</span> Products</h2>
       <!-- INSERT FLICKITY JQUERY APP HERE-->
       <div class="main-carousel">
@@ -122,13 +122,13 @@
     </div><!-- END OF PRODUCTS -->
 
     <!--Sign up for updates, still need to edit submit button and add linear black gradient to overlap the bg image -->
-    <div class = "signup">
+    <div class = "signup" id = "updates">
       <div class = "center">
         <h2 class = "white"><span>Sign-up for</span> Updates</h2>
         <p>Stay updated on our latest product releases, be first to find out about upcoming
         sales, and get free style tips from our blog. Unsubscribe at any time.
         </p>
-        <form action = "file.php" method = "get">
+        <form method = "get">
           <input type = "text" name = "email" placeholder = "Your Email" class = "input">
           <input type = "submit" value = "Subscribe" class = "subscribe">
         </form>
@@ -156,5 +156,6 @@
     <script src = "jquery-3.2.1.min.js"></script>
     <script src = "flickity.pkgd.min.js"></script>
     <script src = "script.js"></script>
+    <script src = "smoothscroll.js"></script>
   </body>
 </html>
