@@ -1,3 +1,3 @@
 # Aloha README
 
-This is the readme for Aloha. 
+School project desiging a static HTML/CSS website with some jQuery for Aloha Apparel.

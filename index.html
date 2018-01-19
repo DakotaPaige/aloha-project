@@ -24,7 +24,6 @@
     <!-- Photo header-->
     <header>
       <div class = "center">
-        <!-- ADJUST CSS OF H1 SO THAT IT WORKS ON MOBILE UNDER 400PX -->
         <h3>NEW COLLECTION</h3>
         <h1>Spring/Summer 2016</h1>
       </div>
@@ -38,7 +37,7 @@
       </div>
     </section>
 
-    <!-- nest more flexboxes to have the two rows be separate flexboxes, then amongst the rows do more flexboxes -->
+    <!-- middle flexbox photo display -->
     <div class = "display-grid" id = "shop">
       <div class = "toprow">
         <div class = "mens">
@@ -64,10 +63,10 @@
       </div>
     </div>
 
-    <!-- Most loved products FLICKITY jquery will be added -->
+    <!-- Most loved products -->
     <div class ="products" id = "feature">
       <h2><span>Most-loved</span> Products</h2>
-      <!-- INSERT FLICKITY JQUERY APP HERE-->
+
       <div class="main-carousel">
         <div class = "inline">
           <div class="carousel-cell">
@@ -99,8 +98,8 @@
             <p>DRESSES</p>
             <h4>Pink Dotted Dress</h4>
             <p>$99.00</p>
-          </div><!-- END OF INLINE -->
-        </div><!-- END OF CAROUSEL-CELL -->
+          </div>
+        </div>
         <div class = "carousel-cell">
           <div class = "inline">
             <img src = "images/blue-silk-dress.jpg" alt = "Blue Silk Dress">
@@ -117,11 +116,10 @@
             <p>$39.00</p>
           </div>
         </div>
-        </div>
       </div><!-- END OF MAIN-CAROUSEL -->
     </div><!-- END OF PRODUCTS -->
 
-    <!--Sign up for updates, still need to edit submit button and add linear black gradient to overlap the bg image -->
+    <!--Sign up for updates -->
     <div class = "signup" id = "updates">
       <div class = "center">
         <h2 class = "white"><span>Sign-up for</span> Updates</h2>
@@ -129,7 +127,6 @@
         sales, and get free style tips from our blog. Unsubscribe at any time.
         </p>
         <form method = "get" id = "subscribe">
-          <!-- Change type = "email" to have it auto validate if the input is an email -->
           <input type = "email" name = "email" placeholder = "Your Email" class = "input">
           <input type = "submit" value = "Subscribe" class = "subscribe">
         </form>
