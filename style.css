@@ -230,6 +230,7 @@ MAIN CSS RESET */
   nav img {
     height: 100%;
     width: 25%;
+    position: relative;
   }
 
   .cart-icon {
@@ -529,7 +530,7 @@ MAIN CSS RESET */
     padding: 0.5em 1.5em;
     font-size: 14px;
     position: relative;
-    left: -5.8em;
+    left: -4.5em;
   }
 
   .input {
@@ -537,10 +538,24 @@ MAIN CSS RESET */
     border-radius: 2em;
     position: relative;
     text-align: left;
-    left: 3em;
+    left: 4.5em;
     margin-top: -0.3em;
     margin-bottom: -0.3em;
+    font-family: 'Raleway', Arial, sans-serif;
     border: none;
+  }
+
+  .cartUpdate {
+    position: absolute;
+    top: 1em;
+    right: 0.4em;
+    width: 1em;
+    height: 1em;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    font-size: 14px;
   }
 
   .flickity-prev-next-button.previous {
@@ -549,6 +564,25 @@ MAIN CSS RESET */
 
   .flickity-prev-next-button.next {
     display: none;
+  }
+
+  .addToCart {
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+    border-radius: 5em;
+    padding: 8px 13px;
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .addToCart:hover {
+    background-color: #3c98ab;
+  }
+
+  .addToCart p {
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
   }
 /* END OF DIVS */
 
@@ -653,6 +687,10 @@ MAIN CSS RESET */
       font-size: 50px;
     }
 
+    .display-grid h3 {
+      font-size: 1.8em;
+    }
+
     .subscribe {
       color: white;
       background-color: #e2574c;
@@ -661,7 +699,7 @@ MAIN CSS RESET */
       font-size: 14px;
       position: relative;
       left: -4.3em;
-      top: 0.08em;
+      top: 0.1em;
     }
     
     .input {
@@ -680,8 +718,14 @@ MAIN CSS RESET */
     .signup p {
       width: 75%;
     }
+
     header {
       margin-top: 5.5em;
+    }
+
+    .cartUpdate {
+      right: 10%;
+      top: 23%;
     }
   }
 
@@ -696,6 +740,12 @@ MAIN CSS RESET */
     
     nav {
       width: 1240px;
+    }
+
+    .cartUpdate {
+      position: absolute;
+      right: 9em;
+      top: 1.4em;
     }
   }
 /* END OF MEDIA QUERIES */
