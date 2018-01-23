@@ -234,6 +234,7 @@ MAIN CSS RESET */
   }
 
   .cart-icon {
+    padding-right: 1em;
     width: 12%;
   }
   section {
@@ -269,6 +270,10 @@ MAIN CSS RESET */
 
   .display-grid h3 {
     font-size: 20px;
+  }
+
+  .display-grid h3:hover {
+    color: #fdf6ae;
   }
 
   h1 {
@@ -548,7 +553,7 @@ MAIN CSS RESET */
   .cartUpdate {
     position: absolute;
     top: 1em;
-    right: 0.4em;
+    right: 1.4em;
     width: 1em;
     height: 1em;
     border-radius: 20px;
@@ -608,6 +613,7 @@ MAIN CSS RESET */
 
     .cart-icon
     {
+      padding-right: 0;
       width: 25%;
     }
 
