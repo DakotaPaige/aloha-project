@@ -15,3 +15,7 @@ Smooth scrolling: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 ## Contributing
 
 Please feel free to submit an issue or pull request. The website is simple enough to not require a build process, just open index.html in a browser.
+
+## License
+
+[MIT](LICENSE)
