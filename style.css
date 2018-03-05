@@ -266,6 +266,7 @@ MAIN CSS RESET */
     font-family: 'Raleway', Arial, sans-serif;
     margin-bottom: 10px;
     text-shadow: black 1px 0 10px;
+    text-transform: uppercase;
   }
 
   .display-grid h3 {
@@ -343,6 +344,7 @@ MAIN CSS RESET */
 
   .inline p {
     color: #969696;
+    text-transform: uppercase;
   }
 
   .flex-footer a:active {
@@ -367,6 +369,7 @@ MAIN CSS RESET */
     font-style: normal;
     font-family: 'Raleway', Arial, sans-serif;
     list-style-type: none;
+    text-transform: uppercase;
   }
 
   footer p {
