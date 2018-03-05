@@ -401,7 +401,7 @@ MAIN CSS RESET */
 
 /* MAIN FLEXBOX DISPLAY */
   .mens {
-    background-image: url("images/mens-category.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/mens-category.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -414,7 +414,7 @@ MAIN CSS RESET */
   }
 
   .trends {
-    background-image: url("images/trends-category.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/trends-category.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -425,7 +425,7 @@ MAIN CSS RESET */
   }
 
   .glasses {
-    background-image: url("images/glasses-category.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/glasses-category.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -437,7 +437,7 @@ MAIN CSS RESET */
   }
 
   .sale {
-    background-image: url("images/sale-category.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/sale-category.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -448,7 +448,7 @@ MAIN CSS RESET */
   }
 
   .bags {
-    background-image: url("images/bags-category.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/bags-category.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -460,7 +460,7 @@ MAIN CSS RESET */
   }
 
   .womens {
-    background-image: url("images/womens-category.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url("images/womens-category.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
