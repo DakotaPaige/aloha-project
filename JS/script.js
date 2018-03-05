@@ -24,7 +24,6 @@ $(function() {
     $('.cartUpdate').show();
     $('.cartUpdate').html('<p>'+currentItems+'</p>');
     currentItems++;
-    console.log(currentItems);
   })
 });
 
