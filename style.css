@@ -391,6 +391,7 @@ MAIN CSS RESET */
     display: inline-block;
     padding:0.5em;
     padding-top: 2em;
+    text-transform: none;
   }
 
   form {
@@ -527,7 +528,6 @@ MAIN CSS RESET */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     flex-direction: column;
   }
 
