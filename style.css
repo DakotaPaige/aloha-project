@@ -298,7 +298,7 @@ MAIN CSS RESET */
     color: #2d2d2d;
   }
 
-  .white {
+  .white-header {
     color: white;
     text-shadow: black 1px 0 10px;
   }
@@ -360,7 +360,7 @@ MAIN CSS RESET */
     color: white;
   }
 
-  .grey {
+  .grey-footer {
     color: #d7d7d7;
   }
 
@@ -370,6 +370,10 @@ MAIN CSS RESET */
     font-family: 'Raleway', Arial, sans-serif;
     list-style-type: none;
     text-transform: uppercase;
+  }
+
+  nav li {
+    font-weight: bold;
   }
 
   footer p {
