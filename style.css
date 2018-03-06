@@ -640,6 +640,10 @@ MAIN CSS RESET */
       padding: 0.2em;
     }
 
+    .flex-footer i {
+      min-width: 25px;
+    }
+
     .toprow {
       display: flex;
       flex-direction: row;
