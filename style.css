@@ -543,6 +543,7 @@ MAIN CSS RESET */
     font-size: 14px;
     position: relative;
     left: -4.5em;
+    border: none;
   }
 
   .input {
@@ -586,6 +587,7 @@ MAIN CSS RESET */
     padding: 8px 13px;
     margin-top: 10px;
     letter-spacing: 0.05em;
+    border: none;
   }
 
   .addToCart:hover {
